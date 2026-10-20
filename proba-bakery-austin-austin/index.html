@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-7FWRKzVFOXUmKsgZ2FocamzPO1UKv3vc/qEJdOs3KCc=' 'sha256-Su2moCxM0CHR/TQTbldOhQR4y2ckFDIfxhVllNninIk=' 'sha256-MYWIwffdMWRjCmTbWyMClAe8Zkk6ETeA2I5KY+n9usI=' 'sha256-XkULS7a1aZFUTs3NX3sqy9HO+X08kDtL0AoiWN5Uyl0=' 'sha256-LRBFunFVFeiamOUPVBYcsYBx3G6h7xb9c8AdK6HSo8k='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.openstreetmap.org; connect-src https://mk2-vizite.eni-wear.workers.dev; form-action 'none'; base-uri 'none'; object-src 'none'"><meta name="jarvis-versiune" content="1"><meta name="generator" content="jarvis2-v1"><style id="jarvis-fara-lateral">html,body{max-width:100%;overflow-x:clip}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proba Bakery Austin | Fresh bread and kolaches in Austin, TX</title>
+<meta name="description" content="Proba Bakery Austin: fresh sourdough, Texas-style kolaches, custom birthday cakes and pastry trays on South Congress Avenue. Free parking behind the shop.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde:#1F2E2A;
+  --alama:#B8925A;
+  --crem:#F2EBDD;
+  --bordo:#5E1F2A;
+  --hartie:#E8DECA;
+  --lumina:#F6E2B0;
+  --text-moale:#4B5651;
+  --fraunces:"Fraunces", Georgia, "Times New Roman", serif;
+  --manrope:"Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--crem);
+  color:var(--verde);
+  font-family:var(--manrope);
+  font-size:1.0625rem;
+  line-height:1.55;
+  letter-spacing:0;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:clip;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+p{margin:0}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+
+.interior{width:min(calc(100% - 2.5rem),1180px);margin-inline:auto}
+
+/* Header: translucent glass bar */
+.antet{
+  position:fixed;
+  top:0;left:0;right:0;
+  z-index:40;
+  color:var(--crem);
+  background:rgba(31,46,42,.28);
+  -webkit-backdrop-filter:blur(18px) saturate(1.15);
+  backdrop-filter:blur(18px) saturate(1.15);
+  border-bottom:1px solid rgba(242,235,221,.08);
+  transition:background-color .5s var(--ease), border-color .5s var(--ease);
+}
+.antet.derulat{background:rgba(31,46,42,.88);border-bottom-color:rgba(184,146,90,.3)}
+.antet-interior{
+  width:min(calc(100% - 2.5rem),1180px);
+  margin-inline:auto;
+  min-height:4rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+}
+.marca{
+  font-family:var(--fraunces);
+  font-size:1.15rem;
+  letter-spacing:-.01em;
+  text-decoration:none;
+  color:var(--crem);
+  padding:.5rem 0;
+}
+.meniu-buton{
+  min-height:44px;
+  min-width:44px;
+  padding:0 1.1rem;
+  background:transparent;
+  border:1px solid rgba(242,235,221,.5);
+  border-radius:2px;
+  color:var(--crem);
+  font:600 .95rem/1 var(--manrope);
+  cursor:pointer;
+  transition:transform .15s var(--ease);
+}
+.meniu-buton:active{transform:scale(.97)}
+.meniu-lista{
+  list-style:none;
+  margin:0;
+  padding:.25rem 1.25rem 1rem;
+  display:none;
+  flex-direction:column;
+  position:absolute;
+  top:100%;
+  left:0;right:0;
+  background:rgba(31,46,42,.97);
+  border-bottom:1px solid rgba(184,146,90,.3);
+}
+.meniu-lista.deschis{display:flex}
+.meniu-lista a{
+  display:flex;
+  align-items:center;
+  min-height:48px;
+  text-decoration:none;
+  font-size:1.05rem;
+  border-bottom:1px solid rgba(242,235,221,.1);
+}
+.meniu-lista li:last-child a{border-bottom:0}
+nav{display:block}
+
+/* Hero: the lamp lights the title */
+.intro{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background:var(--verde);
+  color:var(--crem);
+  padding:6.5rem 0 3.5rem;
+}
+.intro-interior{
+  width:min(calc(100% - 2.5rem),1180px);
+  margin-inline:auto;
+  display:grid;
+  gap:1.25rem;
+  position:relative;
+}
+.lampa{
+  position:relative;
+  justify-self:end;
+  width:118px;
+  margin-right:.25rem;
+}
+.lampa svg{display:block;width:100%;height:auto;overflow:visible}
+.lampa::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:54%;
+  width:300%;
+  height:22rem;
+  transform:translateX(-50%);
+  clip-path:polygon(44% 0,56% 0,100% 100%,0 100%);
+  background:linear-gradient(180deg,rgba(246,226,176,.34) 0%,rgba(246,226,176,.07) 70%,rgba(246,226,176,0) 100%);
+  z-index:-1;
+  pointer-events:none;
+  animation:aprinde 2.8s cubic-bezier(.3,.6,.3,1) .7s both;
+}
+.bec{animation:aprinde 1s ease .2s both}
+.titlu{
+  margin:0;
+  font-family:var(--fraunces);
+  font-weight:400;
+  font-size:clamp(3rem,13.5vw,8.75rem);
+  line-height:1;
+  letter-spacing:-.02em;
+}
+.titlu em{font-style:italic;color:var(--alama);font-weight:350}
+.intro-text{display:grid;gap:0}
+.slogan{
+  font-family:var(--fraunces);
+  font-size:clamp(1.35rem,2.6vw,1.75rem);
+  line-height:1.25;
+  margin:0 0 .6rem;
+}
+.descriere{
+  margin:0 0 1.5rem;
+  color:rgba(242,235,221,.84);
+  max-width:34rem;
+}
+.butoane{display:flex;flex-wrap:wrap;gap:.75rem}
+.detalii{
+  margin:1.5rem 0 0;
+  font-size:.95rem;
+  line-height:1.6;
+  color:rgba(242,235,221,.78);
+}
+.detalii a{text-decoration:none;border-bottom:1px solid rgba(184,146,90,.6)}
+
+.buton{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:.75rem 1.4rem;
+  border-radius:2px;
+  font:600 1rem/1.2 var(--manrope);
+  text-decoration:none;
+  transition:transform .15s var(--ease), background-color .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
+}
+.buton:active{transform:scale(.97)}
+.buton-principal{background:var(--alama);color:var(--verde)}
+.buton-principal:hover{background:#c7a46f}
+.buton-contur{border:1px solid rgba(242,235,221,.6);color:var(--crem)}
+.buton-contur:hover{border-color:var(--alama);color:var(--alama)}
+
+/* Sections */
+.despre,.menu,.galerie-sectiune,.contact{padding:5.5rem 0}
+.despre{background:var(--crem)}
+.menu{background:var(--hartie)}
+.galerie-sectiune{background:var(--bordo);color:var(--crem)}
+.contact{background:var(--crem)}
+
+h2{
+  margin:0 0 2rem;
+  font-family:var(--fraunces);
+  font-weight:400;
+  font-size:clamp(2.1rem,4.6vw,3.6rem);
+  line-height:1.08;
+  letter-spacing:-.02em;
+}
+
+/* About: a page with a drop cap */
+.despre-interior{display:grid;gap:2.5rem}
+.despre-foto{margin:0}
+.despre-foto img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.despre-text p{max-width:36rem;margin:0 0 1.25rem;font-size:1.125rem;line-height:1.6}
+.despre-text p:first-of-type::first-letter{
+  float:left;
+  font-family:var(--fraunces);
+  font-size:4.2em;
+  line-height:.82;
+  padding:.08em .12em 0 0;
+  color:var(--bordo);
+}
+
+/* Menu as a book index */
+.lista-produse{list-style:none;margin:0;padding:0}
+.lista-produse li{padding:1.5rem 0;border-top:1px solid rgba(31,46,42,.18)}
+.lista-produse li:last-child{border-bottom:1px solid rgba(31,46,42,.18)}
+.lista-produse h3{
+  display:flex;
+  align-items:baseline;
+  gap:.6rem;
+  margin:0 0 .35rem;
+  font-family:var(--fraunces);
+  font-weight:500;
+  font-size:1.45rem;
+  line-height:1.2;
+  letter-spacing:-.01em;
+}
+.lista-produse h3::after{
+  content:"";
+  flex:1;
+  border-bottom:1px dotted rgba(94,31,42,.55);
+  transform:translateY(-.3em);
+}
+.lista-produse p{color:var(--text-moale)}
+
+/* Gallery */
+.galerie{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.galerie img{
+  width:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  cursor:zoom-in;
+  transition:opacity .4s var(--ease);
+}
+html.galerie-deschisa .galerie img:not(.marita){opacity:.28}
+.galerie img.marita{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:min(92vw,820px);
+  height:auto;
+  max-height:86vh;
+  aspect-ratio:auto;
+  object-fit:contain;
+  z-index:60;
+  background:var(--verde);
+  cursor:zoom-out;
+  box-shadow:0 30px 80px rgba(0,0,0,.45);
+  animation:aprinde .5s var(--ease) both;
+}
+
+/* Visit */
+.contact-interior{display:grid;gap:3rem}
+.contact-text p.intro-linie{max-width:34rem;margin:0 0 2rem;color:var(--text-moale)}
+.fapte{display:grid;gap:1.4rem;margin:0 0 2.25rem}
+.fapte h3,.notite h3{
+  margin:0 0 .2rem;
+  font-family:var(--manrope);
+  font-size:.95rem;
+  font-weight:700;
+  color:var(--bordo);
+}
+.fapte p{font-size:1.0625rem}
+.notite{list-style:none;margin:0 0 2.5rem;padding:0}
+.notite li{padding:1.1rem 0;border-top:1px solid rgba(31,46,42,.18)}
+.notite li:last-child{border-bottom:1px solid rgba(31,46,42,.18)}
+.notite p{color:var(--text-moale)}
+.contact .buton-principal{background:var(--verde);color:var(--crem)}
+.contact .buton-principal:hover{background:#2b3f39}
+.contact .buton-contur{border-color:var(--verde);color:var(--verde)}
+.contact .buton-contur:hover{border-color:var(--bordo);color:var(--bordo)}
+.contact .butoane{gap:.75rem}
+
+/* Footer */
+.pie{background:var(--verde);color:var(--crem);padding:3.5rem 0 2.5rem;font-size:.95rem}
+.pie-interior{display:grid;gap:.6rem}
+.pie-nume{font-family:var(--fraunces);font-size:1.5rem;line-height:1.2;color:var(--alama)}
+.pie p{color:rgba(242,235,221,.8)}
+.pie .credit{font-size:.85rem;color:rgba(242,235,221,.68);max-width:40rem}
+.pie a{color:var(--lumina);text-underline-offset:.2em;justify-self:start;padding:.5rem 0}
+
+/* Reveal on scroll (without JS everything is visible) */
+.js [data-jarvis="apare"]{
+  opacity:0;
+  transform:translateY(18px);
+  transition:opacity .6s var(--ease), transform .6s var(--ease);
+}
+.js [data-jarvis="apare"].vizibil{opacity:1;transform:none}
+
+@keyframes aprinde{from{opacity:0}to{opacity:1}}
+
+/* Tablet and desktop */
+@media (min-width:860px){
+  .meniu-buton{display:none}
+  .meniu-lista{
+    display:flex;
+    position:static;
+    flex-direction:row;
+    gap:2.25rem;
+    padding:0;
+    background:none;
+    border:0;
+  }
+  .meniu-lista a{min-height:44px;border:0;font-size:.95rem}
+  .meniu-lista li:last-child a{border:0}
+
+  .intro{padding:9rem 0 7rem}
+  .intro-interior{
+    grid-template-columns:minmax(0,1fr) 220px;
+    column-gap:2rem;
+    row-gap:2.5rem;
+  }
+  .lampa{grid-column:2;grid-row:1;width:220px;margin-right:0}
+  .lampa::after{height:40rem}
+  .titlu{grid-column:1/-1;grid-row:2}
+  .intro-text{
+    grid-column:1/-1;
+    grid-row:3;
+    grid-template-columns:minmax(0,1fr) auto;
+    column-gap:3rem;
+    align-items:end;
+  }
+  .slogan{grid-column:1;grid-row:1}
+  .descriere{grid-column:1;grid-row:2;margin-bottom:0}
+  .butoane{grid-column:2;grid-row:1 / span 2;justify-content:flex-end}
+  .detalii{grid-column:1 / -1;grid-row:3;margin-top:2rem}
+
+  .despre,.menu,.galerie-sectiune,.contact{padding:8rem 0}
+  .despre-interior{grid-template-columns:5fr 6fr;gap:6rem;align-items:center}
+  .lista-produse{display:grid;grid-template-columns:1fr 1fr;column-gap:5rem}
+  .lista-produse li:nth-last-child(-n+2){border-bottom:1px solid rgba(31,46,42,.18)}
+  .galerie{grid-template-columns:repeat(4,1fr);gap:1.25rem}
+  .contact-interior{grid-template-columns:1fr 1fr;gap:7rem;align-items:start}
+}
+
+/* Accessibility: transparency and contrast */
+@media (prefers-reduced-transparency:reduce){
+  .antet{background:var(--verde);-webkit-backdrop-filter:none;backdrop-filter:none}
+}
+@media (prefers-contrast:more){
+  .descriere,.detalii,.pie p{color:var(--crem)}
+  .lista-produse p,.notite p,.contact-text p.intro-linie{color:var(--verde)}
+  .buton-contur{border-width:2px}
+  .lista-produse li,.notite li{border-color:var(--verde)}
+  .antet{border-bottom:1px solid var(--crem)}
+}
+
+/* Motion: slower for the lamp, short fades for reduced motion */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .lampa::after{animation:aprinde .4s linear both}
+  .bec{animation:aprinde .3s linear both}
+  .galerie img.marita{animation:aprinde .3s linear both}
+  .js [data-jarvis="apare"],
+  .js [data-jarvis="apare"].vizibil{
+    transform:none;
+    transition:opacity .4s linear;
+  }
+  .galerie img,.buton{transition:opacity .3s linear, background-color .3s linear}
+}
+</style>
+</head>
+<body id="top">
+
+<header class="antet" data-jarvis="antet">
+  <div class="antet-interior">
+    <a class="marca" href="#top">Proba Bakery Austin</a>
+    <nav aria-label="Sections">
+      <ul class="meniu-lista" id="meniu-lista" data-jarvis="meniu-lista">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#despre">About</a></li>
+        <li><a href="#galerie">Gallery</a></li>
+        <li><a href="#contact">Visit</a></li>
+      </ul>
+    </nav>
+    <button class="meniu-buton" type="button" data-jarvis="meniu" aria-expanded="false" aria-controls="meniu-lista">Contents</button>
+  </div>
+</header>
+
+<main>
+
+<section class="intro" aria-labelledby="titlu">
+  <div class="intro-interior">
+    <div class="lampa" aria-hidden="true">
+      <svg viewbox="0 0 200 220" focusable="false">
+        <ellipse cx="100" cy="208" rx="46" ry="7" fill="#B8925A"/>
+        <polyline points="100,201 100,178 134,124 128,66" fill="none" stroke="#B8925A" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="100" cy="178" r="6" fill="#B8925A"/>
+        <circle cx="134" cy="124" r="5" fill="#B8925A"/>
+        <path d="M112 64 Q128 56 146 64 L180 116 Q130 126 78 116 Z" fill="#5E1F2A"/>
+        <line x1="78" y1="116" x2="180" y2="116" stroke="#B8925A" stroke-width="3" stroke-linecap="round"/>
+        <circle class="bec" cx="130" cy="124" r="6" fill="#F6E2B0"/>
+      </svg>
+    </div>
+    <h1 class="titlu" id="titlu">Proba Bakery <em>Austin</em></h1>
+    <div class="intro-text">
+      <p class="slogan">Fresh bread and Texas kolaches daily</p>
+      <p class="descriere">Fresh sourdough bread, Texas-style kolaches, and custom birthday cakes in Austin.</p>
+      <div class="butoane">
+        <a class="buton buton-principal" href="tel:+15125550142">Call now</a>
+        <a class="buton buton-contur" href="https://www.google.com/maps/search/?api=1&amp;query=Proba+Bakery+Austin+Austin">Get directions</a>
+      </div>
+      <p class="detalii">Tuesday to Sunday, 7am to 3pm<br><a href="tel:+15125550142">(512) 555-0142</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="despre" id="despre" aria-labelledby="despre-titlu">
+  <div class="interior despre-interior">
+    <figure class="despre-foto" data-jarvis="apare">
+      <img src="img/1.jpg" alt="Freshly baked loaves of bread" loading="lazy">
+    </figure>
+    <div class="despre-text" data-jarvis="apare">
+      <h2 id="despre-titlu">Fresh bread and pastries, steps from the Continental Club</h2>
+      <p>Proba Bakery Austin brings fresh bread and pastries just steps from the Continental Club. Stop in for Texas-style kolaches, order a custom birthday cake, or pick up a tray of treats for your next event. Free parking is available behind the shop.</p>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu" aria-labelledby="menu-titlu">
+  <div class="interior">
+    <h2 id="menu-titlu" data-jarvis="apare">Menu</h2>
+    <ul class="lista-produse">
+      <li data-jarvis="apare">
+        <h3>Fresh sourdough bread</h3>
+        <p>Sourdough bread, baked fresh in Austin.</p>
+      </li>
+      <li data-jarvis="apare">
+        <h3>Texas-style kolaches</h3>
+        <p>Sweet and savory flavors, made every morning.</p>
+      </li>
+      <li data-jarvis="apare">
+        <h3>Custom birthday cakes</h3>
+        <p>Made to order for birthdays.</p>
+      </li>
+      <li data-jarvis="apare">
+        <h3>Catering trays of pastries</h3>
+        <p>Assorted pastries for events large or small.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="galerie-sectiune" id="galerie" aria-labelledby="galerie-titlu">
+  <div class="interior">
+    <h2 id="galerie-titlu" data-jarvis="apare">Gallery</h2>
+    <div class="galerie" data-jarvis="galerie">
+      <img src="img/2.jpg" alt="Loaves of bread" loading="lazy">
+      <img src="img/3.jpg" alt="Baker in an apron working with dough" loading="lazy">
+      <img src="img/4.jpg" alt="Artisan loaves of bread" loading="lazy">
+      <img src="img/5.jpg" alt="A crusty loaf of bread" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contact-titlu">
+  <div class="interior contact-interior">
+    <div class="contact-text" data-jarvis="apare">
+      <h2 id="contact-titlu">Visit us on South Congress</h2>
+      <div class="fapte">
+        <div>
+          <h3>Address</h3>
+          <p>1500 South Congress Avenue<br>Austin, TX 78704</p>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>Tuesday to Sunday, 7am to 3pm</p>
+        </div>
+        <div>
+          <h3>Phone</h3>
+          <p><a href="tel:+15125550142">(512) 555-0142</a></p>
+        </div>
+      </div>
+      <div class="butoane">
+        <a class="buton buton-principal" href="tel:+15125550142">Call now</a>
+        <a class="buton buton-contur" href="https://www.google.com/maps/search/?api=1&amp;query=Proba+Bakery+Austin+Austin">Get directions</a>
+      </div>
+    </div>
+    <ul class="notite" data-jarvis="apare">
+      <li>
+        <h3>Parking</h3>
+        <p>You can park for free in the lot behind the bakery.</p>
+      </li>
+      <li>
+        <h3>Early mornings</h3>
+        <p>Open from 7am Tuesday to Sunday.</p>
+      </li>
+      <li>
+        <h3>Custom cakes</h3>
+        <p>Birthday cake orders available.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="interior pie-interior">
+    <p class="pie-nume">Proba Bakery Austin</p>
+    <p>1500 South Congress Avenue, Austin, TX 78704</p>
+    <p>Website concept (demo)</p>
+    <p class="credit">Illustrative photos from Pixabay: Intuitivmedia, Pexels, 267490, Wounds_and_Cracks</p>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script>(function () {
+  var antet = document.querySelector('[data-jarvis="antet"]');
+  if (!antet) return;
+  function pune() { antet.classList.toggle('derulat', window.scrollY > 12); }
+  window.addEventListener('scroll', pune, { passive: true });
+  pune();
+})();
+</script><script>(function () {
+  var toate = document.querySelectorAll('[data-jarvis="apare"]');
+  function arata(x) { x.classList.add('vizibil'); }
+  var linistit = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!('IntersectionObserver' in window) || linistit) { toate.forEach(arata); return; }
+  document.documentElement.classList.add('js');
+  var paznic = new IntersectionObserver(function (intrari) {
+    intrari.forEach(function (i) {
+      if (i.isIntersecting) { arata(i.target); paznic.unobserve(i.target); }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+  toate.forEach(function (x) { paznic.observe(x); });
+  // plasa de siguranță (ca în Mark I): ce e deja deasupra marginii de jos a ecranului apare singur
+  function plasa() {
+    toate.forEach(function (x) { if (x.getBoundingClientRect().top < window.innerHeight) arata(x); });
+  }
+  var t;
+  window.addEventListener('scroll', function () { clearTimeout(t); t = setTimeout(plasa, 1200); }, { passive: true });
+  window.addEventListener('load', function () { setTimeout(plasa, 2500); });
+})();
+</script><script>(function () {
+  var marita = null;
+  function inchide() {
+    if (!marita) return;
+    marita.classList.remove('marita');
+    document.documentElement.classList.remove('galerie-deschisa');
+    marita = null;
+  }
+  document.querySelectorAll('[data-jarvis="galerie"] img').forEach(function (img) {
+    img.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var era = marita === img;
+      inchide();
+      if (era) return;
+      marita = img;
+      img.classList.add('marita');
+      document.documentElement.classList.add('galerie-deschisa');
+    });
+  });
+  document.addEventListener('click', inchide);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') inchide(); });
+})();
+</script><script>(function () {
+  var buton = document.querySelector('[data-jarvis="meniu"]');
+  var lista = document.querySelector('[data-jarvis="meniu-lista"]');
+  if (!buton || !lista) return;
+  function pune(deschis) {
+    lista.classList.toggle('deschis', deschis);
+    document.documentElement.classList.toggle('meniu-deschis', deschis);
+    buton.setAttribute('aria-expanded', deschis ? 'true' : 'false');
+  }
+  buton.addEventListener('click', function (e) {
+    e.stopPropagation();
+    pune(!lista.classList.contains('deschis'));
+  });
+  lista.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () { pune(false); });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lista.classList.contains('deschis')) { pune(false); buton.focus(); }
+  });
+  document.addEventListener('click', function (e) {
+    if (!lista.contains(e.target) && !buton.contains(e.target)) pune(false);
+  });
+  window.addEventListener('resize', function () { if (window.innerWidth > 860) pune(false); });
+  pune(false);
+})();
+</script><script>(function () {
+  var NUMARATOR = 'https://mk2-vizite.eni-wear.workers.dev';
+  if (location.origin !== 'https://maiki689.github.io' || location.hash === '#eu') return;
+  var m = /^\/site-demo-proba\/([a-z0-9][a-z0-9-]{0,100})\/(?:index\.html)?$/.exec(location.pathname);
+  if (!m) return;
+  var marcaj = document.querySelector('meta[name="jarvis-versiune"]');
+  var v = marcaj && /^[1-9][0-9]{0,5}$/.test(marcaj.content) ? '&v=' + marcaj.content : '';
+  function trimite(fel) {
+    try { navigator.sendBeacon(NUMARATOR + '/v?s=' + m[1] + '&e=' + fel + v); } catch (e) {}
+  }
+  trimite('deschis');
+  var apasari = 0;
+  document.addEventListener('click', function (ev) {
+    var a = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null;
+    if (!a || apasari >= 3) return;
+    if (a.protocol === 'tel:' || a.protocol === 'mailto:' || a.hostname === 'wa.me' || a.hostname === 'api.whatsapp.com') {
+      apasari++;
+      trimite('contact');
+    }
+  }, true);
+})();
+</script></body>
+</html>
